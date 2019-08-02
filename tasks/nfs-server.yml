@@ -1,7 +1,7 @@
 ---
 - name: install nfs-server packages
-  yum:
-    name: nfs-utils
+  apt:
+    name: nfs-kernel-server
     state: present
 
 - name: ensure exported path exists
