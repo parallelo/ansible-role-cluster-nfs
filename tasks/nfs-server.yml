@@ -8,6 +8,7 @@
   file:
     path: "{{ nfs_export }}"
     state: directory
+    mode: a+rw
 
 - block:
     - name: create filesystem on disk
